@@ -45,11 +45,10 @@ type Properties struct {
 
 type User struct {
 	Username string `json:"username" bson:"username"`
+	Email	 string `json:"email" bson:"email"`
 	Password string `json:"password" bson:"password"`
 	Role     string `json:"role,omitempty" bson:"role,omitempty"`
 	Token    string `json:"token,omitempty" bson:"token,omitempty"`
-	Private  string `json:"private,omitempty" bson:"private,omitempty"`
-	Publick  string `json:"publick,omitempty" bson:"publick,omitempty"`
 }
 
 type Credential struct {
